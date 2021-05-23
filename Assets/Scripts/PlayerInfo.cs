@@ -1,0 +1,37 @@
+using System;
+using UnityEngine;
+
+[Serializable]
+public class PlayerInfo : MonoBehaviour{
+    public static PlayerInfo Instance;
+    private void Awake() {
+        if (Instance== null) {
+            Instance = this;
+        }else if (Instance == this) {
+            Destroy(gameObject);
+        }
+    }
+
+   
+
+    public int GetCoins() => PlayerPrefs.GetInt("user_coins");
+
+    public void AddCoins(int value) {
+        var currentAmount = PlayerPrefs.GetInt("user_coins");
+        currentAmount += value;
+        PlayerPrefs.SetInt("user_coins", currentAmount);
+        PlayerPrefs.Save();
+    }
+
+    public void RemoveCoins(int value) {
+        var currentAmount = PlayerPrefs.GetInt("user_coins");
+        currentAmount -= value;
+        PlayerPrefs.SetInt("user_coins", currentAmount);
+        PlayerPrefs.Save();
+    }
+
+    public void AddCoinsPerSec(int coins) {
+        var currentCoins = PlayerPrefs.GetInt("user_coins_per_sec");
+        
+    }
+}
