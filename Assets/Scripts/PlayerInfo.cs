@@ -10,13 +10,23 @@ public class PlayerInfo : MonoBehaviour{
         }else if (Instance == this) {
             Destroy(gameObject);
         }
+        if (!PlayerPrefs.HasKey("user_coins")) {
+            PlayerPrefs.SetInt("user_coins",0);
+        }
+        if (!PlayerPrefs.HasKey("user_coins_per_sec")) {
+            PlayerPrefs.SetInt("user_coins_per_sec",0);
+        }
     }
 
    
 
     public int GetCoins() => PlayerPrefs.GetInt("user_coins");
-
+    public int GetLevel() => PlayerPrefs.GetInt("user_coins_per_sec");
+    
     public void AddCoins(int value) {
+        
+        
+        
         var currentAmount = PlayerPrefs.GetInt("user_coins");
         currentAmount += value;
         PlayerPrefs.SetInt("user_coins", currentAmount);
@@ -32,6 +42,8 @@ public class PlayerInfo : MonoBehaviour{
 
     public void AddCoinsPerSec(int coins) {
         var currentCoins = PlayerPrefs.GetInt("user_coins_per_sec");
-        
+        currentCoins += coins;
+        PlayerPrefs.SetInt("user_coins_per_sec", currentCoins);
+        PlayerPrefs.Save();
     }
 }

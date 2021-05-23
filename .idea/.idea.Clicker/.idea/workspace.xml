@@ -8,9 +8,14 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="HighlightingSettingsPerFile">
-    <setting file="file://$PROJECT_DIR$/../../../Program Files/Unity/Hub/Editor/2020.3.7f1/Editor/Data/Resources/PackageManager/BuiltInPackages/com.unity.ugui/Runtime/EventSystem/ExecuteEvents.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/../../../../Program Files/Unity/Hub/Editor/2020.3.7f1/Editor/Data/Resources/PackageManager/BuiltInPackages/com.unity.ugui/Runtime/UI/Core/StencilMaterial.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/../../../../Program Files/Unity/Hub/Editor/2020.3.7f1/Editor/Data/Resources/PackageManager/BuiltInPackages/com.unity.2d.tilemap/Editor/GridPaintPaletteWindow.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/../../../../Program Files/Unity/Hub/Editor/2020.3.7f1/Editor/Data/Resources/PackageManager/BuiltInPackages/com.unity.2d.tilemap/Editor/GridPaletteBrushes.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.mathematics@1.1.0/Unity.Mathematics/random.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/TopPanel.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.timeline@1.4.7/Runtime/TimelineAsset_CreateRemove.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.timeline@1.4.7/Editor/Manipulators/AddDelete/AddDeleteItemModeReplace.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/../../../../Program Files/Unity/Hub/Editor/2020.3.7f1/Editor/Data/Resources/PackageManager/BuiltInPackages/com.unity.2d.tilemap/Editor/TilemapPrefabStageHelper.cs" root0="SKIP_HIGHLIGHTING" />
   </component>
   <component name="IdeDocumentHistory">
     <changedPaths>
@@ -24,11 +29,12 @@
       <option value="$PROJECT_DIR$/Assets/Scripts/CoinsData.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/Buttons/PauseButton.cs" />
       <option value="$PROJECT_DIR$/Assets/TopPanel.cs" />
-      <option value="$PROJECT_DIR$/Assets/Scripts/GameManager.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/Buttons/FirstClick.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/Panels/ShopPanel.cs" />
-      <option value="$PROJECT_DIR$/Assets/Scripts/Panels/ShopObject.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/GameManager.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/PlayerInfo.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/Panels/ShopObject.cs" />
+      <option value="$PROJECT_DIR$/Assets/CoinsUpdater.cs" />
     </changedPaths>
   </component>
   <component name="ProjectId" id="1sOrL6LtFSKVihV27cLlBLGFjtP" />
@@ -55,10 +61,10 @@
       </option>
       <method v="2" />
     </configuration>
-    <configuration name="Attach to Unity Editor" type="UNITY_DEBUG_RUN_CONFIGURATION" factoryName="Unity Debug" show_console_on_std_err="false" show_console_on_std_out="false" port="50000" address="localhost" ignored-value-for-modified-check="14304">
+    <configuration name="Attach to Unity Editor" type="UNITY_DEBUG_RUN_CONFIGURATION" factoryName="Unity Debug" show_console_on_std_err="false" show_console_on_std_out="false" port="50000" address="localhost" ignored-value-for-modified-check="6404">
       <option name="allowRunningInParallel" value="false" />
       <option name="listenPortForConnections" value="false" />
-      <option name="pid" value="14304" />
+      <option name="pid" value="6404" />
       <option name="projectPathOnTarget" />
       <option name="selectedOptions">
         <list />
@@ -90,7 +96,7 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="DotNet Breakpoints">
           <url>file://$PROJECT_DIR$/Assets/Scripts/GameManager.cs</url>
-          <line>27</line>
+          <line>29</line>
           <properties documentPath="C:\Users\kuibi\Clicker\Assets\Scripts\GameManager.cs" initialLine="27" containingFunctionPresentation="method 'ClickHandler'">
             <startOffsets>
               <option value="956" />
@@ -113,6 +119,19 @@
             </endOffsets>
           </properties>
           <option name="timeStamp" value="9" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="DotNet Breakpoints">
+          <url>file://$PROJECT_DIR$/Assets/Scripts/Panels/ShopObject.cs</url>
+          <line>15</line>
+          <properties documentPath="C:\Users\kuibi\Documents\clicker\Assets\Scripts\Panels\ShopObject.cs" initialLine="16" containingFunctionPresentation="method 'Purchase'">
+            <startOffsets>
+              <option value="501" />
+            </startOffsets>
+            <endOffsets>
+              <option value="502" />
+            </endOffsets>
+          </properties>
+          <option name="timeStamp" value="10" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>

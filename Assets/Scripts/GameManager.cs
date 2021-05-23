@@ -8,6 +8,7 @@ using Random = UnityEngine.Random;
 
 public class GameManager : MonoBehaviour {
     [SerializeField] private Text scoreText;
+    [SerializeField] private Text levelText;
     [SerializeField] private Button Click;
     [SerializeField] private GameObject ClickPrefab;
     [SerializeField] private GameObject ClickGenerator;
@@ -23,6 +24,7 @@ public class GameManager : MonoBehaviour {
         }
         Click.onClick.AddListener(ClickHandler);
         scoreText.text = _playerInfo.GetCoins().ToString();
+        levelText.text = _playerInfo.GetLevel().ToString();
     }
 
     private void ClickHandler() {
